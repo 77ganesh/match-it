@@ -24,7 +24,7 @@ var loadState = {
 	create: function () {
 		// var logo = game.add.sprite(game.world.centerX, game.world.centerY, 'paper');
 		// console.log(game.cache.getJSON('gameData'));
-		game.state.start('end');
+		game.state.start('play');
 	}
 }
 
