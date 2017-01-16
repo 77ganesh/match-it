@@ -2,7 +2,7 @@ var quizOptions;
 var puzzleData = {};
 var score;
 var questionNo;
-
+var debugSprite;
 
 var playState = {
 
@@ -16,7 +16,7 @@ var playState = {
 		var titleText = game.add.text(game.world.centerX, 50, "Match it!", { font: "bold 60px Arial", fill: "#000000" });
         titleText.anchor.setTo(0.5, 0.5);
 
-		var bottomText = game.add.text(game.world.centerX, 1050, "Source: Wikipedia, National Geography", { font: "10px Arial", fill: "#000000" });
+		var bottomText = game.add.text(game.world.centerX, 750, "Source: Wikipedia, National Geography, AperianGlobal", { font: "14px Arial", fill: "#000000" });
 		bottomText.anchor.setTo(0.5);
         
         // us = game.add.sprite(game.world.centerX, game.world.centerY, 'us');
@@ -40,13 +40,14 @@ var playState = {
             t.tint = 0xfdf969;
             t.anchor.set(0.5);
             var tOption = quizOptions[i].option;
+            // var tOption = "We greet Dai dhuit jee-uh Gwitch";
             var tText1 = tOption.substring(0,tOption.indexOf(' '));
             var tArr = tOption.split(' ');
             if(tText1.length < 10) {
             	tText1 = tArr.slice(0,2).join(' ');
             	tText2 = tArr.slice(2).join(' ');
             }
-            else 
+            else
             	var tText2 = tOption.substring(tOption.indexOf(' ')+1);
            	
 
@@ -67,14 +68,14 @@ var playState = {
 
 	},
 
-	onDragStop: function(sprite) {
+	onDragStop: function(sprite) {;
        if( this.anyOverlap(sprite))
        		this.checkAndEvaluate(sprite);
 	},
 
 	checkAndEvaluate: function(sprite) {
 		var res = this.checkIntersection(sprite.getBounds(), sprite.myAnswer);
-	 	// sprite.destroy();
+	 	sprite.destroy();
 
 	 	var answerArr = ["india", "china", "ireland", "us"];
 
@@ -112,14 +113,14 @@ var playState = {
 		var flag = false;
 		// console.log(bound1);
 
-		/*switch(answer) {
+		switch(answer) {
 			case 1:
 				// China
 				if ( 
 					(bound1.x > -70)
-					&& (bound1.x < 210)
+					&& (bound1.x < 240)
 					&& (bound1.y > 55)
-					&& (bound1.y < 275)
+					&& (bound1.y < 300)
 				)
 					return true;				
 			break; // Not Required
@@ -127,10 +128,10 @@ var playState = {
 			case 0:
 				// India
 				if ( 
-					(bound1.x > bound2.x -25)
-					&& (bound1.x < bound2.x +220)
-					&& (bound1.y > bound2.y -20)
-					&& (bound1.y < bound2.y +180)
+					(bound1.x > 260)
+					&& (bound1.x < 555)
+					&& (bound1.y > 55)
+					&& (bound1.y < 300)
 				)
 					return true;				
 			break; // Not Required
@@ -138,10 +139,10 @@ var playState = {
 			case 2:
 				// Ireland
 				if ( 
-					(bound1.x > bound2.x -25)
-					&& (bound1.x < bound2.x +220)
-					&& (bound1.y > bound2.y -20)
-					&& (bound1.y < bound2.y +180)
+					(bound1.x > -70)
+					&& (bound1.x < 240)
+					&& (bound1.y > 300)
+					&& (bound1.y < 530)
 				)
 					return true;				
 			break; // Not Required
@@ -149,22 +150,22 @@ var playState = {
 			case 3:
 				// US
 				if ( 
-					(bound1.x > bound2.x -25)
-					&& (bound1.x < bound2.x +220)
-					&& (bound1.y > bound2.y -20)
-					&& (bound1.y < bound2.y +180)
+					(bound1.x > 260)
+					&& (bound1.x < 555)
+					&& (bound1.y > 300)
+					&& (bound1.y < 530)
 				)
 					return true;				
 			break; // Not Required
 
-		}*/
+		}/*
 				if ( 
 					(bound1.x > -70)
-					&& (bound1.x < 210)
-					&& (bound1.y > 55)
-					&& (bound1.y < 275)
+					&& (bound1.x < 240)
+					&& (bound1.y > 300)
+					&& (bound1.y < 530)
 				)
-					return true;	
+					return true;	*/
 
 		return flag;
 	},
@@ -249,8 +250,8 @@ var playState = {
         return Math.floor(Math.random()*100)%t;
     },
 
-    render: function() {
-    	var pos = game.input.activePointer.position;
-        game.debug.text("x:" + pos.x + " y:" + pos.y, 180, 200);
-    }
+    // render: function() {
+    // 	var pos = game.input.activePointer.position;
+    //     game.debug.text("x:" + pos.x + " y:" + pos.y, 180, 200);
+    // }
 };

@@ -1,15 +1,15 @@
 {
 	"easy": [
-		["Population of 1.29 billion","Capital - New Delhi","Currency is Rupee","River Yamuna flows here","River Brahmaputra flows here","Indus river flows here","Namasthe is how we greet","National Animal- Bengal Tiger","National Bird- Peacock","The Blue City ","The Taj Mahal","This country is a peninsula"],
-		["Population of 1.3 Billion", "Capital city - Beijing", "Currency is Yuan", "River Yangtze flows here","Yellow River flows here","Ni Hao is how we greet","National Animal- Giant Panda","National Bird-Golden Phesant"],
-		["Population of 6 Million", "Capital city - Dublin", "Currency is Euro","River Shannon flows here","River Liffe flows here","River Moy flows here","River Barrow flows here","We greet Dai dhuit jee-uh Gwitch", "National Animal- Red deer"],
-		["Population of 0.3 Billion", "Capital - Washington D C", "Currency US Dollar","River Mississippi flows here","River Colorado flows here","Hi/Hello is how we greet","National Animal- American Bison","National Symbol- Bald Eagle"]
+		["Population of 1.29 billion","Capital - New Delhi","Currency is Rupee","River Yamuna flows here","River Brahmaputra flows here","Indus river flows here","Namasthe is how we greet","National Animal- Bengal Tiger","National Bird- Peacock","The Blue City","The Taj Mahal","This country is a peninsula"],
+		["Population of 1.37 Billion", "Capital city - Beijing", "Currency is Yuan", "River Yangtze flows here","Yellow River flows here","Ni Hao is how we greet","National Animal- Giant Panda","National Bird- Golden Pheasant"],
+		["Population of 6 Million", "Capital city - Dublin", "Currency is Euro","River Shannon flows here","River Liffe flows here","River Moy flows here","River Barrow flows here","We greet-Dai dhuit jee-uh Gwitch", "National Animal- Red deer"],
+		["Population of 0.3 Billion", "Capital - Washington D C", "Currency- Dollar","River Mississippi flows here","River Colorado flows here","National Animal- Bison","National Symbol- Bald Eagle"]
 	],
 	
 	"challenging": [
 		[""],
-		["Largest country in area","World's longest continuous civilization","Communist State","Paper invented here","Magnetic Compass invented here","Birthplace of silk","Dim sum-steamed dumplings","Calligraphy invented here","Li River,Gullian"],
-		["Constitutional Democracy", "Nicknamed Emerald Isle","No wild snakes in this country","Also called Celtic Tiger", "An island in North Atlantic"],
-		["3rd largest in the world by size","Birthplace of Jazz","Statue of Liberty","Mount Rushmore National Memorial", "The mardi gras indians parade"]
-	]
+		["4th largest country in area","Longest continuous civilization","Communist State","Paper invented here","Magnetic Compass invented here","Birthplace of silk","Dim sum-steamed dumplings","Calligraphy invented here","Li River,Gullian"],
+		["Constitutional Democracy", "Nicknamed Emerald Isle","Land without wild snakes","Also called Celtic Tiger", "An island in North Atlantic"],
+		["3rd largest in the world by size","Constitution-based federal republic", "Birthplace of Jazz","Statue of Liberty","Mount Rushmore National Memorial", "The mardi gras indians parade"] 
+] 
 }
